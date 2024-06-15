@@ -3,7 +3,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     box-sizing: border-box;
     background-color: #f7f7f7;
     color: #333;
@@ -166,7 +166,7 @@ header nav ul li a {
     color: #4a4a4a;
 }
 
-.contact p {
+contact p {
     font-size: 18px;
     color: #666;
 }
