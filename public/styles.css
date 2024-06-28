@@ -1,7 +1,7 @@
 /* styles.css */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', sans-serif;
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
@@ -24,10 +24,15 @@ header .container {
     padding: 0 20px;
 }
 
+header .logo {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
 header h1 {
     margin: 0;
     font-size: 24px;
-    font-weight: 700;
+    /* font-weight: 700; */
     color: #4a4a4a;
 }
 
@@ -46,11 +51,16 @@ header nav ul li {
 header nav ul li a {
     color: #4a4a4a;
     text-decoration: none;
-    font-weight: 500;
+    /* font-weight: 500; */
+}
+
+header nav ul li a:visited {
+    color: #4a4a4a; /* タップ済みリンクの色 */
 }
 
 .hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
+ /*    background: #1A38A6; 希望する色に変更 */
+    background: url('hero-background.png') no-repeat top center/cover;
     color: #fff;
     text-align: center;
     padding: 100px 20px;
@@ -86,7 +96,7 @@ header nav ul li a {
 }
 
 .hero .btn-primary {
-    background: #4a90e2;
+    background: #1A38A6;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -96,7 +106,7 @@ header nav ul li a {
 }
 
 .hero .btn-primary:hover {
-    background: #357ab8;
+    background: #4971E7;
 }
 
 .features {
@@ -158,6 +168,15 @@ header nav ul li a {
 .contact .container {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.contact-link {
+    color: #1A38A6; /* 希望する色に変更 */
+    text-decoration: underline;
+}
+
+.contact-link:hover {
+    color: #4971E7; /* ホバー時の色 */
 }
 
 .contact h2 {
