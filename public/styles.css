@@ -21,12 +21,12 @@ header .container {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px 20px; /* パディングを微調整 */
 }
 
 header .logo {
-    max-height: 50px;
-    margin-right: 20px;
+    max-height: 24px;
+    width: auto;      /* 幅は自動調整 */
 }
 
 header h1 {
@@ -59,9 +59,9 @@ header nav ul li a:visited {
 }
 
 .hero {
- /*    background: #1A38A6; 希望する色に変更 */
-    background: url('hero-background.png') no-repeat top center/cover;
-    color: #fff;
+    background: #fff;
+    /* background: url('hero-background.png') no-repeat top center/cover; */
+    color: #535353;
     text-align: center;
     padding: 100px 20px;
     position: relative;
@@ -74,7 +74,7 @@ header nav ul li a:visited {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* 半透明の黒いオーバーレイ */
+    /* background-color: rgba(0, 0, 0, 0.4); 半透明の黒いオーバーレイ */
     z-index: 1;
 }
 
@@ -86,23 +86,23 @@ header nav ul li a:visited {
 .hero h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #535353;
 }
 
 .hero p {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #fff;
+    color: #535353;
 }
 
-.hero .btn-primary {
-    background: #1A38A6;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background 0.3s;
+.appstore-btn img {
+    width: 150px; /* アイコンのサイズを調整 */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.appstore-btn:hover img {
+    transform: scale(1.1); /* ホバー時に少し拡大 */
 }
 
 .hero .btn-primary:hover {
@@ -193,11 +193,25 @@ contact p {
 footer {
     background: #f7f7f7;
     color: #aaa;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 footer .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
