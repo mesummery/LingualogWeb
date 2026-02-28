@@ -215,3 +215,20 @@ footer .container {
 .footer-links a:hover {
     text-decoration: underline;
 }
+
+.lang-switch {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 0 20px;
+    font-size: 14px;
+}
+
+.lang-switch a {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.lang-switch a:visited {
+    color: #4a4a4a;
+}
